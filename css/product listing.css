@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-lite-gray: #f9f9f9;
+    --color-dark-primary: #2a2548;
+    --color-nav-links: #726e8d;
+}
+
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Light.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Clah Display";
+    src: url(../fonts/ClashDisplay-Bold.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../fonts/Satoshi-Regular.woff2);
+    font-weight: 400;
+}
+
+.button {
+    text-decoration: none;
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+    padding: 16px 32px;
+    font-family: Satoshi;
+    font-size: 16px;
+}
+
+.buttonwhite {
+    text-decoration: none;
+    color: var(--color-lite-gray);
+    background-color: var(--color-dark-primary);
+    padding: 16px 32px;
+    font-family: Satoshi;
+    font-size: 16px;
+}
+
+.buttonwhite:hover {
+    transition: all 0.8s;
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+}
+
+.button:hover {
+    transition: all 0.8s;
+    color: var(--color-lite-gray);
+    background-color: var(--color-dark-primary);
+}
+
+header div.top {
+    font-family: Satoshi;
+    font-size: 14px;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    padding: 11px 9px;
+    justify-self: center;
+}
+
+header div.top p {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    column-gap: 8px;
+    justify-self: center;
+}
+
+header section.lol {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 30px 80px;
+}
+
+header section a{
+    font-family: "Clah Display";
+    justify-self: center;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+header section>a {
+    font-family: "Clah Display";
+    font-size: 24px;
+    text-decoration: none;
+    color: #22202e;
+}
+
+header section ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 4vw;
+}
+
+header section ul a {
+    text-decoration: none;
+    color: var(--color-nav-links);
+    font-family: Satoshi;
+    font-size: 16px;
+}
+
+header section div.icons{
+    display: grid;
+    grid-template-columns: repeat(3, 16px);
+    justify-content: end;
+    column-gap: 15px;
+}
+
+main section.decoration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 8vw;
+    grid-template-rows: 38vw;
+    column-gap: 6vw;
+    align-items: center;
+}
+
+main section.decoration>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.decoration div.tabl {
+    display: grid;
+    grid-template-columns: max-content 1px max-content 1px max-content;
+    align-items: center;
+    column-gap: 30px;
+}
+
+main section.decoration div.tabl div {
+    background-color: black;
+    height: 50%;
+}
+
+main section.decoration div.tabl p {
+    display: grid;
+}
+
+main section.divan h1 {
+    font-family: "Clah Display";
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+main section.divan header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 500px;
+    column-gap: 20px;
+}
+
+main section.divan {
+    padding: 50px 8vw;
+}
+
+main section.divan header div {
+    padding-bottom: 100px;
+}
+
+main section.divan header div div.texts p {
+    font-size: 20px;
+    font-family: "Clah Display";
+    font-weight: 400;
+    padding-bottom: 10px;
+
+}
+
+main section.divan header div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 24px;
+}
+
+main section.divan header div img:hover {
+    transition: all 0.8s;
+    transform: scale(1.05);
+}
+
+main section.divan a {
+    display: grid;
+    justify-content: center;
+    margin: 0px 35vw;
+}
+
+main section.maker {
+    padding: 50px 8vw 100px 8vw;
+}
+
+main section.maker h1 {
+    display: grid;
+    justify-content: center;
+    font-family: "Clah Display";
+    font-weight: 400;
+    font-size: 24px;
+    padding: 40px 0;
+}
+
+main section.maker header {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}
+
+main section.maker header div {
+    background-color: var(--color-lite-gray);
+    padding: 40px;
+    row-gap: 10px;
+    display: grid;
+}
+
+main section.maker header div p {
+    font-family: "Clah Display";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+header.club div form {
+    display: grid;
+    grid-template-rows: 56px;
+    grid-template-columns: 3fr 1fr;
+}
+
+header.club div form input {
+    border-radius: 0;
+    border: none;
+    padding-left: 3vw;
+    background-color: var(--color-lite-gray);
+}
+
+header.club div form input[type=submit] {
+    color: var(--color-white);
+    background-color: var(--color-dark-primary);
+    padding: 0 32px;
+}
+header.club {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header.club div {
+    display: grid;
+    padding: 70px;
+    align-content: space-between;
+}
+
+header.club div .text {
+    display: grid;
+    padding: 0;
+}
+
+header.club div .text h3 {
+    font-family: "Clah Display";
+    font-weight: 400;
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+header.club div .text p {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header.club img {
+    height: 100%;
+    width: 100%;
+}
